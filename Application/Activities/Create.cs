@@ -46,7 +46,7 @@ namespace Application.Activities
             _context.Activities.Add(activity);
             var success = await _context.SaveChangesAsync() > 0;
 
-            if (success) return Unit.Value;
+            if (success) return Unit.Value; //empty object, when received send 200 Ok
             
             throw new Exception("Problem saving changes");
         }

@@ -34,7 +34,7 @@ namespace Application.Activities
                 if (activity == null)
                     throw new Exception("Could not find activity");
 
-                activity.Title = request.Title ?? activity.Title;            
+                activity.Title = request.Title ?? activity.Title;  //if null revert back to activity title          
                 activity.Description = request.Description ?? activity.Description;            
                 activity.Category = request.Category ?? activity.Category;            
                 activity.Date = request.Date ?? activity.Date;            
