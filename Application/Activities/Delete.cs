@@ -1,6 +1,8 @@
 using System;
+using System.Net;
 using System.Threading;
 using System.Threading.Tasks;
+using Application.Errors;
 using MediatR;
 using Persistence;
 
@@ -25,8 +27,10 @@ namespace Application.Activities
             {
                 var activity = await _context.Activities.FindAsync(request.Id);
 
-                _ = activity ?? throw new Exception("Could not find activity");
-
+                // _ = activity ?? throw new RestException(HttpStatusCode.NotFound, new {activity = "Not found"});
+                if(activity==null)
+                    throw new RestException(HttpStatusCode.NotFound, new {activity = "Not found"});
+                
                 _context.Remove(activity);              
 
                 var success = await _context.SaveChangesAsync() > 0;
