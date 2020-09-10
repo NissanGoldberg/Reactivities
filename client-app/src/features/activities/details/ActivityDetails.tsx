@@ -13,9 +13,7 @@ interface DetailParams {
     id: string
 }
 
-const ActivityDetails: React.FC<RouteComponentProps<DetailParams>> = ({
-                                                                          match, history
-                                                                      }) => {
+const ActivityDetails: React.FC<RouteComponentProps<DetailParams>> = ({match, history}) => {
     const activityStore = useContext(ActivityStore);
     const { activity, loadActivity, loadingInitial } = activityStore;
 
