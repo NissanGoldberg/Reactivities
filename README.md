@@ -20,7 +20,6 @@ Reactivities is a full web application
 
 In the Future:
 
-* will add login with JWT and Identity
 * photo uploader
 * and much more
 
@@ -28,9 +27,9 @@ In the Future:
 
 ## Architecture and Implementation
 
-<img src="https://i.ibb.co/8xyXqLh/Reactivies-Arch.png" alt="Reactivies-Arch" border="0">
+<img src="https://i.ibb.co/QcWmGBN/Reactivies-Arch2.png" alt="Reactivies-Arch2" border="0">
 
-
+Demo
 
 <img src="https://i.ibb.co/HVQ0n1h/reactivities-gif2.gif" alt="reactivities-gif2" border="0">
 

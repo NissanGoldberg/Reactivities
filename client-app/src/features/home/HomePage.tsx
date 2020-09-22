@@ -4,6 +4,7 @@ import {Link} from "react-router-dom";
 import {RootStoreContext} from "../../app/stores/rootStore";
 import LoginForm from "../user/LoginForm";
 import RegisterForm from "../user/RegisterForm";
+import DemoForm from "../user/DemoForm";
 
 const HomePage = () => {
     const rootStore = useContext(RootStoreContext);
@@ -35,6 +36,9 @@ const HomePage = () => {
                             </Button>
                             <Button onClick={() => openModal(<RegisterForm />)} size='huge' inverted>
                                 Register
+                            </Button>
+                            <Button onClick={() => openModal(<DemoForm />)} size='huge' inverted>
+                                Test App
                             </Button>
                         </Fragment>
                     )
