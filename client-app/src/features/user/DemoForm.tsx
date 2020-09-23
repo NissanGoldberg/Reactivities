@@ -4,9 +4,6 @@ import {Form, Button, Header} from 'semantic-ui-react';
 import TextInput from '../../app/common/form/TextInput';
 import { RootStoreContext } from '../../app/stores/rootStore';
 import { IUserFormValues } from '../../app/models/user';
-import { FORM_ERROR } from 'final-form';
-import { combineValidators, isRequired } from 'revalidate';
-import ErrorMessage from "../../app/common/form/ErrorMessage";
 // import ErrorMessage from '../../app/common/form/ErrorMessage';
 
 const DemoForm = () => {
@@ -15,7 +12,7 @@ const DemoForm = () => {
   return (
     <FinalForm
       onSubmit={(values: IUserFormValues) => 
-        login({email: 'demo_user@test.com', password: 'Pa$$w0rd'})
+        login({email: 'bob@test.com', password: 'Pa$$w0rd'})
       }
       render={({
         handleSubmit,
@@ -28,7 +25,7 @@ const DemoForm = () => {
             color='teal'
             textAlign='center'
           />
-          <Field name='email' defaultValue='demo_user@test.com' component={TextInput} placeholder='Email' />
+          <Field name='email' defaultValue='bob@test.com' component={TextInput} placeholder='Email' />
           <Field
             name='password'
             component={TextInput}

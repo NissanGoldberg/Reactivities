@@ -31,7 +31,7 @@ In the Future:
 
 Demo
 
-<img src="https://i.ibb.co/HVQ0n1h/reactivities-gif2.gif" alt="reactivities-gif2" border="0">
+<img src="https://i.ibb.co/411myXT/reactivities-gif-updated.gif" alt="reactivities-gif-updated" border="0">
 
 ### API
 
