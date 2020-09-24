@@ -18,10 +18,25 @@ Reactivities is a full web application
 
 
 
-In the Future:
 
-* photo uploader
-* and much more
+##### Features:
+* login with JWT token
+* live chat in each group (signalR)
+* create, edit, join and leave activities
+
+##### Thing to do:
+
+* Finish photo uploader
+* See on sidebar who is currently online in each group
+* Send reply with ENTER keyword checkbox option
+* Send photos in chat
+* Google and Facebook login
+* Deploy to Cloud
+
+##### Issues:
+
+* `history.push` doesn't redirect page automatically
+* Activity name doesn't appear correctly on a phone
 
 
 
