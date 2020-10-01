@@ -40,6 +40,39 @@ Reactivities is a full web application
 
 
 
+#### Setting Up
+
+###### First
+
+`cd` into API
+
+```
+\Reactivities\API$ dotnet user-secrets list
+```
+
+now set each ***user-secret***
+
+```
+..\API$ dotnet user-secrets set "TokenKey" "your_token"
+..\API$ dotnet user-secrets set "Cloudinary:CloudName" "your_cloud_name"
+..\API$ dotnet user-secrets set "Cloudinary:ApiSecret" "your_api_secret"
+..\API$ dotnet user-secrets set "Cloudinary:ApiKey" "your_key"
+```
+
+###### Second
+
+ add the `appsettings.json` which contain your ***connection string*** to the  **API** directory
+
+###### Last
+
+start your .net server and `cd` into **client-app** and 
+
+```
+\Reactivities\client-app$ npm start
+```
+
+
+
 ## Architecture and Implementation
 
 <img src="https://i.ibb.co/QcWmGBN/Reactivies-Arch2.png" alt="Reactivies-Arch2" border="0">
