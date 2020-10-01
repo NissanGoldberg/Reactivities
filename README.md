@@ -97,9 +97,6 @@ start your .net server and `cd` into **client-app** and
 
 <img src="https://i.ibb.co/QcWmGBN/Reactivies-Arch2.png" alt="Reactivies-Arch2" border="0">
 
-Demo
-
-<img src="https://i.ibb.co/411myXT/reactivities-gif-updated.gif" alt="reactivities-gif-updated" border="0">
 
 ### API
 
