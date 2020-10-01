@@ -20,9 +20,29 @@ Reactivities is a full web application
 
 
 ##### Features:
-* login with JWT token
-* live chat in each group (signalR)
 * create, edit, join and leave activities
+* live chat in each group (signalR)
+* login with JWT token
+
+
+
+###### create, edit, join and leave activities
+
+<img src="https://i.ibb.co/9nvVMtR/reactivities-manage-events.gif" alt="reactivities-manage-events" border="0">
+
+
+
+###### live chat
+
+<img src="https://i.ibb.co/YWhqMV0/reactivities-replies-and-chat.gif" alt="reactivities-replies-and-chat" border="0">
+
+
+
+###### login with JWT tokens
+
+<img src="https://i.ibb.co/pKJfCct/reactivities-login.gif" alt="reactivities-login" border="0">
+
+
 
 ##### Thing to do:
 
