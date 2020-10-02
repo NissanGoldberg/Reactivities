@@ -64,7 +64,10 @@ const User = {
 }
 
 const Profiles = {
-    get: (username: string): Promise<IProfile> => requests.get(`/profiles/${username}`)
+    get: (username: string): Promise<IProfile> => requests.get(`/profiles/${username}`),
+    follow: (username: string) => requests.post(`/profiles/${username}/follow`, {}),
+    unfollow: (username: string) => requests.del(`/profiles/${username}/follow`),
+    listFollowings: (username: string, predicate: string) => requests.get(`/profiles/${username}/follow?predicate=${predicate}`)
 }
 
 export default {

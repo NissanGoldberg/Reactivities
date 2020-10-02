@@ -45,9 +45,6 @@ const ActivityListItem: React.FC<{activity: IActivity}> = ({activity}) => {
                 <Icon name='marker' /> {activity.venue}, {activity.city}
             </Segment>
             <Segment secondary>
-                Attendees will go here
-            </Segment>
-            <Segment secondary>
                 <ActivityListItemAttendees attendees={activity.attendees} />
             </Segment>
             <Segment clearing>
